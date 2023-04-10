@@ -31,7 +31,7 @@ public abstract class Hogwarts {
         } else if (other.getTotalMagicPower() > this.getTotalMagicPower()) {
             System.out.println(other.getName() + " сильнее чем " + this.getName());
         } else {
-            System.out.println("Ученики равны по силе");
+            System.out.println(other.getName() + " и " + this.getName() + " равны по силе");
         }
     }
 
@@ -39,4 +39,5 @@ public abstract class Hogwarts {
     public String toString() {
         return "name: " + name + "\n" + "Сила магии: " + witchCraft + ", Расстояние трансгресии: " + teleport;
     }
+
 }

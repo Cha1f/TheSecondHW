@@ -32,12 +32,12 @@ public class Griffindor extends Hogwarts {
         } else if (other.getCoursePower() > this.getCoursePower()) {
             System.out.println(other.getName() + " сильнее чем " + this.getName());
         } else {
-            System.out.println("Ученики равны по силе");
+            System.out.println(other.getName() + " и " + this.getName() + " равны по силе");
         }
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\n" + "Благородство: " + nobility + ", " + "Честь: " + honor + ", " + "Храбрость: " + bravery;
+        return super.toString() + "\n" + "Благородство: " + nobility + ", Честь: " + honor + ", Храбрость: " + bravery;
     }
 }
